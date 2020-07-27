@@ -1,0 +1,60 @@
+@import 'vendors/normalize';
+
+@import 'base/base';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'layout/brand';
+@import 'layout/restaurants';
+
+
+
+.soon {
+    display: flex;
+    max-width: 1300px;
+    height: 100px;    
+    color: $color-brand-text;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+
+        .soon-element {
+            
+           padding-left: 13rem;
+            width: 400px;            
+            border-radius: 20px;
+            font-size: 2rem;
+            background-color: $color-brand-background;
+        }
+    
+}
+.footer {
+    display:flex;    
+    background-color: $color-brand-background;
+    max-width: 1300px;
+    height: 100px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    font-size: 2rem;
+        footer__item{
+        width: 200px;        
+       }
+        a { 
+         margin: 0 6rem 0 6rem;  
+        text-decoration: none;      
+        color:$color-brand-text
+        
+     }
+
+
+
+
+
+     
+
+}
+
+
+
+
+  

@@ -1,0 +1,104 @@
+.restaurants {
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;   
+    
+}
+.restaurant{
+    width: $width;
+    height: $height;
+    box-shadow: 1px 1px 8px rgb(206, 202, 202); 
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;              
+            
+            
+ }
+.restaurant--lne { 
+    font-family: 'Devonshire', cursive;    
+    background-color: #fcdfdb;
+    justify-content: center;
+    align-items: center; 
+    
+   
+
+    &:hover {
+       
+        width: $width;
+        height:$height;
+        transform: scale(1.1);
+        opacity: 0.5;
+        
+      }
+    
+        img{ 
+            margin-left: 3rem;
+            width: 100px;
+            height: 100px
+            
+        }
+        h1{
+            padding-top: 0;
+            margin-top: 0;
+            color:#3c1218;
+            font-size:3rem;
+        }
+        h2{
+            font-family: 'Caveat', cursive;
+            color:#3c1218
+        }      
+           
+}
+.restaurant__titlemenu{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    
+}
+
+
+
+.restaurant--mc {
+    display: flex;
+    background-color: #fff5fe;
+    justify-content: center;
+    align-items: center;
+    h1 {
+       background-image: linear-gradient(to right, #e38913,#8f5bfe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }  
+    h2{
+        color:#c77412
+    }
+}
+.restaurant--md {
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+        h1{
+            background-image: linear-gradient(to right, #0022db,#0889fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        h2{
+            color:#0887fb
+        }
+}
+.restaurant--mp { 
+    background-color: #fdfffd;
+    justify-content: center;
+    align-items: center;
+        h1{
+            background-image: linear-gradient(to right, #3d923a,#beff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        h2{ 
+            color:#72bf56
+        }
+}

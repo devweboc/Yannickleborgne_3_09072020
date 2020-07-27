@@ -1,0 +1,10 @@
+.brand {
+    max-width: 1300px;
+    height: 10rem;
+    background-color: $color-brand-background;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    font-size: 4rem;
+    color:$color-brand-text;        
+}
