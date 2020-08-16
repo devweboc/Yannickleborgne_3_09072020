@@ -1,6 +1,58 @@
-$color-brand-text:#fcca46;
+
+$main-width: 1300px;
+
+
+/* header et footer variables */
+
 $color-brand-background: #579c87;
-$width: 450px; 
-$height: 500px;
-$color-menu2__text-primary: #e38913;
-$color-menu2__text-secondary: #8f5bfe;
+
+$color-brand-text:#fcca46;
+
+/* La note enchantée variables */
+$lne-background:#fcdfdb; 
+
+$lne-text-color:#3c1218;
+$lne-family-font-only:'Balsamiq Sans', cursive;
+$lne-font-family-title: 'Devonshire', cursive;
+$font-family-text-principal: "Segoe Print", cursive;
+
+
+/* Le chic à la française variables */
+
+$chic-background: #fff5fe;
+
+$chic-text-color-1:#e38913;
+$chic-text-color-2:#c67412;
+$chic-text-color-3:#6e4ccc;
+$chic-text-color-4:#a56799;
+
+$chic-font-family-title:'Croissant One', cursive;
+$chic-font-family-texte:'Noto Serif', serif;
+
+/* Le délice des papilles variables */
+
+$delice-background:#edefef;
+
+$delice-text-color-1:#0022db;
+$delice-text-color-2:#0889fb;
+$delice-text-color-3:#0887fb;
+
+$delice-text-color-carte:#000000;
+
+$delice-font-family-title:'Dancing Script', cursive;
+$delice-font-family-texte: 'Kalam', cursive;
+
+/* la palette du goût variables */
+
+$palette-background:#fdfffd;
+
+$palette-text-color-1:#3d923a;
+$palette-text-color-2:#beff7f;
+$palette-text-color-3:#72bf56;
+
+$palette-font-family-title: 'Kaushan Script', cursive;
+$palette-font-family-texte: 'Kalam', cursive;
+
+/* animation - transition */
+
+$transition:all 0.5s ease-in-out;

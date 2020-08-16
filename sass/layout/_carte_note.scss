@@ -1,0 +1,76 @@
+
+
+.title-restaurant h1{ 
+  
+  @include flexcenter;
+  font-family:$lne-family-font-only;
+}
+.menu--lne{  
+  margin:0 auto ;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  line-height: initial;
+  max-width: 1000px;    
+  background-color: $lne-background;
+  font-size: 1.1rem;
+  color:$lne-text-color;    
+
+    .header, h1, h3 {
+    
+     font-family: $lne-font-family-title;     
+     }
+    .header, h1{
+        font-size: 4rem;
+      }
+   
+
+
+    p , h2 { 
+          font-family:$font-family-text-principal;          
+        }
+          
+        p, span { 
+          padding: 0 3rem ;
+        }
+          
+  .menu__decoration{
+    @include flex-evenly;
+
+      .menu__decoration__tray{
+      height: 20px;
+      width: 170px;
+      margin:2.5rem;
+    }
+  }
+  .menu__dishe{
+    @include flex-between;
+    margin:1rem 4rem;     
+      
+      span{
+      font-size:1.5rem;    
+      } 
+  }
+      h3{
+      font-size: 3.2rem;     
+      }
+
+  .note2{ 
+  width: 60px;
+  height:60px;
+  margin:3rem 0.7rem;     
+  }
+
+  /* soulignement au passage de la souris des titres des repas"*/
+  .menu__decoration h2::after{
+  @include underline;
+  }
+
+  .menu__decoration h2:hover::after {
+  @include underline-transition;
+  }
+
+  .menu__foot-note{
+  @include flexcenter;
+  }
+}
+

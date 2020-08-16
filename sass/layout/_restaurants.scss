@@ -1,104 +1,111 @@
 .restaurants {
-    display:flex;
+    @include flex-center-align-text;
+    padding:0;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    max-width: 1300px;
-    width: 100%;
-    justify-content: center;
-    justify-items: center;   
+    box-sizing: border-box;        
     
 }
 .restaurant{
-    width: $width;
-    height: $height;
-    box-shadow: 1px 1px 8px rgb(206, 202, 202); 
-    display: flex;
-    margin: 1rem;
-    flex-wrap: wrap;              
+    @include shadow;
+    @include flex-center-align-text;
+    width: 33rem;
+    height: 40rem; 
+    box-sizing: border-box;    
+    margin: 1rem;   
+    font-family: $font-family-text-principal;
             
+        h1{ 
+            font-size: 2.4rem;
+            padding-bottom: 2rem;
+        }
+        h2{ 
+            font-size: 3.4rem;
+        }
+    
+    overflow: hidden;
+    a:link{ 
+      text-decoration: none;
+      
+    }
+  
+    &:hover {
+      a{
+        transform: scale(1.20);
+        opacity: 0.78;
+      }
+    }
+    
+    a {
+      transition: $transition;      
+     
+      &::selection {
+      background-color: transparent;
+        color: white;
+    }
+    } 
             
  }
-.restaurant--lne { 
-    font-family: 'Devonshire', cursive;    
-    background-color: #fcdfdb;
-    justify-content: center;
-    align-items: center; 
+ .restaurant--lne { 
     
-   
-
-    &:hover {
-       
-        width: $width;
-        height:$height;
-        transform: scale(1.1);
-        opacity: 0.5;
-        
-      }
-    
+    background-color: $lne-background;   
+      
         img{ 
-            margin-left: 3rem;
             width: 100px;
-            height: 100px
             
         }
         h1{
             padding-top: 0;
             margin-top: 0;
-            color:#3c1218;
-            font-size:3rem;
+            color:$lne-text-color;            
+            font-family: $lne-font-family-title; 
+            
         }
         h2{
-            font-family: 'Caveat', cursive;
-            color:#3c1218
-        }      
+            font-family:$font-family-text-principal;            
+            color:$lne-text-color;
+        }  
+}   
            
-}
-.restaurant__titlemenu{
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
+
+.restaurant--mc {    
+    background-color:$chic-background;
+    font-family:$chic-font-family-title ;
     
-}
-
-
-
-.restaurant--mc {
-    display: flex;
-    background-color: #fff5fe;
-    justify-content: center;
-    align-items: center;
+    
     h1 {
-       background-image: linear-gradient(to right, #e38913,#8f5bfe);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        margin:0;
+        @include gradientcolor ($colorA: $chic-text-color-1, $colorB: $chic-text-color-3);
+        
       }  
     h2{
-        color:#c77412
+        font-family: $chic-font-family-texte;
+        color:$chic-text-color-2;
     }
 }
 .restaurant--md {
-    background-color: #f9f9f9;
-    justify-content: center;
-    align-items: center;
+    background-color: $delice-background;
+  
         h1{
-            background-image: linear-gradient(to right, #0022db,#0889fb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-family: $delice-font-family-title;   
+        @include gradientcolor ($colorA: $delice-text-color-1, $colorB: $delice-text-color-2);
+        padding-left: 1rem;
+        
         }
         h2{
-            color:#0887fb
+            font-family: $delice-font-family-texte;         
+            color:$delice-text-color-3;
         }
 }
 .restaurant--mp { 
-    background-color: #fdfffd;
-    justify-content: center;
-    align-items: center;
+    background-color: $palette-background;
+    
         h1{
-            background-image: linear-gradient(to right, #3d923a,#beff7f);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+         font-family: $palette-font-family-title;   
+        @include gradientcolor ($colorA: $palette-text-color-1, $colorB: $palette-text-color-2);
+        
         }
         h2{ 
-            color:#72bf56
+            font-family: $palette-font-family-texte;            
+            color:$palette-text-color-3;
         }
 }

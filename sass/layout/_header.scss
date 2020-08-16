@@ -1,0 +1,7 @@
+.header {    
+    @include flex-center-align-text;
+    width:100%;    
+    background-color: $color-brand-background;    
+    font-size: 4rem;
+    color:$color-brand-text;        
+}

@@ -1,0 +1,36 @@
+.footer {
+    display:flex; 
+    position: fixed; 
+    bottom:0;  
+    background-color: $color-brand-background;
+    width:100%;    
+    flex-shrink: 0;
+    justify-content: space-between;
+    font-size: 2rem;
+
+        footer__item{
+        width: 200px;        
+       }
+
+       
+        a { 
+         margin: 0 6rem 0 6rem;  
+        text-decoration: none;      
+        color:$color-brand-text
+        
+     }
+   }    
+
+.footer__item{
+  &:hover {
+    animation: shake 1.5s;
+  }
+}
+
+
+
+
+
+
+
+

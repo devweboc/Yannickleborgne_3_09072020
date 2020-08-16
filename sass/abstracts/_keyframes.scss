@@ -1,0 +1,31 @@
+
+@keyframes soon-element {
+	
+	
+	to {
+		background-color: #fcca46;
+		transform: translate(0, -.4rem);
+	}
+}
+
+@keyframes shake {
+	10%, 90% {
+		transform: translateX(-4px);
+	}
+
+	20%, 80% {
+		transform: translateX(4px);
+	}
+
+	30%,50%,70% {
+		transform: translateX(-6px);
+	}
+
+	40%,60% {
+		transform: translateX(6px);
+
+			
+	}	
+	
+}
+

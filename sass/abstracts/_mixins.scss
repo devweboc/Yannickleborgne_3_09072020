@@ -1,0 +1,49 @@
+@mixin flexcenter{
+    display: flex;
+    justify-content: center;
+     
+}
+
+@mixin gradientcolor ($colorA: $chic-text-color-1, $colorB:$chic-text-color-3) {
+    background: $colorA;
+    background: linear-gradient(168deg, $colorA , $colorB );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin shadow  {
+
+box-shadow: 4px 4px 16px 6px (rgb(230, 231, 233))
+   
+}
+@mixin flex-center-align-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+@mixin underline {
+    content:'';
+    display:block;
+    width:0;
+    height: 0.25rem;
+    background-color:$color-brand-text;
+    transition: $transition;
+    }
+
+@mixin underline-transition{
+
+    width:100%;
+    transition: $transition;
+    }
+  
