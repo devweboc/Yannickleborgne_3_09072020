@@ -44,7 +44,9 @@
     margin-top: 3rem;
 
   }
-  p, h2 {
+
+  p,
+  h2 {
     @extend %font-family-commun;
   }
 }

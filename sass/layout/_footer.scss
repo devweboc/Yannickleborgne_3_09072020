@@ -1,23 +1,27 @@
-
- 
-  .footer {
+.footer {
   display: flex;
   position: fixed;
   bottom: 0;
   background-color: $color-brand-background;
-  width: 100%;   
+  width: 100%;
   justify-content: space-between;
-  font-size: 3rem;       
-} 
-
-
-  
-
-  a {
-    margin: 0 6rem;
-    text-decoration: none;
-    color: $color-brand-text
+  font-size: 3rem;
+  @include mobile-only{
+    font-size: 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
   }
+
+}
+
+
+
+
+a {
+  margin: 0 6rem;
+  text-decoration: none;
+  color: $color-brand-text
+}
 
 
 .footer__item {
@@ -25,11 +29,12 @@
     animation: shake 1.5s;
   }
 
-  
+
 
 
 }
-@include small-screen{
+
+/*@include small-screen{
   .footer {
     flex-direction: column-reverse;
     align-items: center;
@@ -39,5 +44,4 @@
 
    
   }
-}
-
+}*/

@@ -11,7 +11,7 @@
   font-size: 1.3rem;
   line-height: 2.8rem;
   @include shadow-card;
-  
+
 
   h1 {
     font-size: 4rem;
@@ -45,10 +45,11 @@
 
     }
   }
+h3 {
+  font-size: 3.2rem;
 
-  h3 {
-    font-size: 3.2rem;
-  }
+ 
+}
 
   /* soulignement au passage de la souris des titres des repas"*/
   .menu__decoration h2::after {
