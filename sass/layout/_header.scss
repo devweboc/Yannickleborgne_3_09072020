@@ -1,7 +1,12 @@
 .header {    
-    @include flex-center-align-text;
+    @include flexcenter;
     width:100%;    
     background-color: $color-brand-background;    
     font-size: 4rem;
     color:$color-brand-text;        
 }
+@include small-screen{
+    .header{
+    font-size: 1rem;
+    width:110%;
+} }

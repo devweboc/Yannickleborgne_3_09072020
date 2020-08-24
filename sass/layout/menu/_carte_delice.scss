@@ -1,0 +1,36 @@
+
+
+.menu--delice {
+  background-color: $delice-background;
+  @extend %padding-bottom-10;
+
+  .header,
+  h1 {
+    font-family: $delice-font-family-title;
+  }
+
+  h1 {
+    @include gradientcolor ($colorA: $delice-text-color-1, $colorB: $delice-text-color-2);
+    @extend %font-padding;
+    @extend %font-size-h1;
+    padding-bottom: 4rem;
+    padding-top: 12rem;
+  }
+  .menu__decoration__tray {
+    height: 40px;
+    width: 290px;
+    margin: 0rem 1rem;
+
+  }
+
+  h2,
+  p {
+    @extend %font-family-commun;
+  }
+
+  .menu__dishe {
+    color: $delice-text-color-carte;
+    padding: 0 10.5rem;
+
+  }
+}

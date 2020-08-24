@@ -1,0 +1,61 @@
+@import 'menu/carte_chic';
+@import 'menu/carte_delice';
+@import 'menu/carte_palette';
+@import 'menu/carte_note';
+
+.menu {
+
+  margin: 0 auto;
+  margin-bottom: $margin-bottom-15;
+  max-width: 1100px;
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  @include shadow-card;
+  
+
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+
+  }
+
+  .menu__title {
+    text-align: center;
+  }
+
+
+
+  .menu__decoration {
+    @include flex-between;
+    margin: 2rem 3rem;
+    padding: 2rem 0rem;
+
+
+
+    .menu__decoration__tray {
+      padding-top: 2rem;
+    }
+  }
+
+  .menu__dishe {
+    @include flex-between;
+
+    span {
+      @extend %size-price;
+
+    }
+  }
+
+  h3 {
+    font-size: 3.2rem;
+  }
+
+  /* soulignement au passage de la souris des titres des repas"*/
+  .menu__decoration h2::after {
+    @include underline;
+  }
+
+  .menu__decoration h2:hover::after {
+    @include underline-transition;
+  }
+}

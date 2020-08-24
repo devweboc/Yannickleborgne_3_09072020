@@ -1,0 +1,47 @@
+.menu--chic {
+  background-color: $chic-background;
+  font-family: $chic-font-family-texte;
+  @extend %padding-bottom-10;
+
+  .header,
+  h1,
+  h3 {
+    font-family: $chic-font-family-title;
+  }
+
+  h1 {
+    @include gradientcolor ($colorA: $chic-text-color-1, $colorB: $chic-text-color-3);
+    @extend %font-padding;
+    font-size: 3rem;
+  }
+
+  h2,
+  p,
+  span {
+    font-family: $chic-font-family-texte;
+  }
+
+  .menu__decoration {
+    padding-top: 2rem;
+
+    .menu__decoration__tray {
+      height: 25px;
+      width: 300px;
+      margin-top: 0.3rem;
+    }
+  }
+
+  .menu__dishe {
+    padding: 0 12rem;
+  }
+
+  .menu__dishe--1 {
+    color: $chic-text-color-2;
+  }
+  .menu__dishe--2 {
+    color: $chic-text-color-4;
+  }
+  .menu__dishe--3 {
+    color: $chic-text-color-3;
+  }
+}

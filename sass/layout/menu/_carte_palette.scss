@@ -1,0 +1,42 @@
+.menu--palette {
+  background-color: $palette-background;
+  
+  @extend %padding-bottom-10;
+
+  .header,
+  h1 {
+    font-family: $palette-font-family-title;
+  }
+
+  p,
+  h2 {
+    @extend %font-family-commun;
+  }
+
+  h2 {
+    padding-top: 2rem;
+  }
+
+  h1 {
+    @include gradientcolor ($colorA: $palette-text-color-1, $colorB: $palette-text-color-2);
+    @extend %font-padding;
+    @extend %font-size-h1;
+    padding-bottom: 3rem;
+    padding-top: 12rem;
+  }
+
+  .menu__dishe {
+    padding: 0 8rem;
+  }
+
+  .menu__decoration__tray {
+    height: 40px;
+    width: 315px;
+    margin: 2rem 1rem;
+
+  }
+
+  h3 {
+    font-size: 3.2rem;
+  }
+}
