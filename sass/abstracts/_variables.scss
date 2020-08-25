@@ -71,9 +71,8 @@ $transition:all 0.5s ease-in-out;
 
 
 $breakpoints: (
-    mobile: 320px,
+    phone-up:320px,
     tablet-up: 600px,
-    tablet-down: 900px,
-    desktop-up: 1024px,
+    tablet-down: 1010px,    
     desktop-down: 1280px,
     widescreen-up: 1440px);

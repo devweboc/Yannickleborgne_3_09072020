@@ -9,11 +9,15 @@
 .restaurant {
     @include shadow-card;
     @include flex-center-align-text;
-    width: 33rem;
+    width: 46%;
     height: 40rem;
     margin: 1rem;
     font-family: $font-family-text-principal;
 
+    @include screen-max-width('widescreen-up'){
+        width: 100%;
+    }
+    
     h1 {
 
         padding-bottom: 1rem;

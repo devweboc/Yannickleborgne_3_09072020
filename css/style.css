@@ -415,6 +415,11 @@ main {
   font-size: 4rem;
   color: #fcca46;
 }
+@media screen and (min-width: 600px) {
+  .header {
+    font-size: 2rem;
+  }
+}
 
 .restaurants {
   display: flex;
@@ -432,10 +437,15 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 33rem;
+  width: 46%;
   height: 40rem;
   margin: 1rem;
   font-family: "Segoe Print", cursive;
+}
+@media screen and (min-width: 1440px) {
+  .restaurant {
+    width: 100%;
+  }
 }
 .restaurant h1 {
   padding-bottom: 1rem;
@@ -533,35 +543,36 @@ main {
   justify-content: space-between;
   font-size: 3rem;
 }
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) {
   .footer {
     font-size: 1rem;
+    line-height: 0.2;
+    margin-bottom: 0.2rem;
     flex-direction: column-reverse;
     align-items: center;
   }
 }
-
-a {
+@media screen and (min-width: 600px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .footer .footer__item {
+    height: 20%;
+  }
+}
+.footer a {
   margin: 0 6rem;
   text-decoration: none;
   color: #fcca46;
 }
-
 .footer__item:hover {
   animation: shake 1.5s;
 }
 
-/*@include small-screen{
-  .footer {
-    flex-direction: column-reverse;
-    align-items: center;
-    font-size: 1rem;
-    line-height: 0.1;
-    min-height: 66px;
-
-
-  }
-}*/
 .soon {
   display: flex;
   color: #fcca46;
@@ -692,7 +703,8 @@ a {
   font-size: 3.2rem;
 }
 
-.title-restaurant h1 {
+.title-restaurant p {
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   font-family: "Balsamiq Sans", cursive;

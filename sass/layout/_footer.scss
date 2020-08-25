@@ -6,14 +6,21 @@
   width: 100%;
   justify-content: space-between;
   font-size: 3rem;
-  @include mobile-only{
-    font-size: 1rem;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
+  @include screen-max-width ($format: 'phone-up'){ 
+  font-size: 1rem;
+  line-height: 0.2;
+  margin-bottom: 0.2rem;
+  @include column-reverse-align;
 }
-
+  @include screen-max-width('tablet-up'){
+    @include column-reverse-align;
+    font-size: 1.5rem;
+    width:100%;
+    overflow: hidden;
+      .footer__item{         
+        height:20%;
+      }
+}
 
 
 
@@ -24,7 +31,7 @@ a {
 }
 
 
-.footer__item {
+&__item {
   &:hover {
     animation: shake 1.5s;
   }
@@ -34,14 +41,8 @@ a {
 
 }
 
-/*@include small-screen{
-  .footer {
-    flex-direction: column-reverse;
-    align-items: center;
-    font-size: 1rem;
-    line-height: 0.1;
-    min-height: 66px;
+}
 
-   
-  }
-}*/
+
+
+

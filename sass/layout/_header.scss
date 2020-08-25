@@ -5,4 +5,10 @@
     font-size: 4rem;
     color: $color-brand-text;
     
+
+@include screen-max-width ($format: 'tablet-up'){ 
+    font-size: 2rem;
+
+}
+
 }
