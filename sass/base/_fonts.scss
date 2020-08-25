@@ -3,15 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Devonshire&display=swap');
 
 /*--------- police tarif cartes la note enchantée + le délice des papilles + la palette du goût---------*/
-@font-face {font-family: "Segoe Print";
-
-    src: url("http://db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot"); /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-   
-    url ("../fonts/Segoe-Print-V1/Segoe-Print.woff2") format("woff2"), /* chrome firefox */
-    
-    url ("../fonts/Segoe-Print-V1/Segoe-Print.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    
+@font-face {font-family: "Segoe Print V1";
+    src: url("c455d94eee43dc4ceeb83c0c0fd0d4c8.eot"); /* IE9*/
+    src: url("c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), /* chrome、firefox */
+    url("c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), /* chrome、firefox */
+    url("c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print V1") format("svg"); /* iOS 4.1- */
 }
 /*--------- police Le chic à la française --------- */
 
