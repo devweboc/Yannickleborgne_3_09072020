@@ -413,7 +413,6 @@ a {
 }
 .restaurant--mc h1 {
   background-image: linear-gradient(to right, #e38913, #8f5bfe);
-  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
