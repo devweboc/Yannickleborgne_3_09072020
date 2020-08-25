@@ -1,0 +1,63 @@
+.title-restaurant p {
+  font-size: 3rem;
+  @include flexcenter;
+  font-family: $lne-family-font-only;
+}
+
+.menu--lne {
+
+  background-color: $lne-background;
+  color: $lne-text-color;
+  padding-bottom: 3rem;
+
+  .header,
+  h1,
+  h3 {
+
+    font-family: $lne-font-family-title;
+  }
+
+  h2 {
+    padding-top: 3.9rem;
+    margin: 0;
+
+  }
+
+  .menu__decoration {
+    padding: 0 5rem;
+  }
+
+  .menu__decoration__tray {
+    height: 25px;
+    width: 270px;
+    padding: 0;
+    margin: 2.5rem 1rem;
+  }
+
+  .menu__dishe {
+    padding: 0 8rem;
+  }
+
+  .note {
+    width: 120px;
+    height: 120px;
+    margin-top: 3rem;
+
+  }
+
+  p,
+  h2 {
+    @extend %font-family-commun;
+  }
+}
+
+.note2 {
+  width: 70px;
+  height: 70px;
+  margin: 2rem 0.7rem;
+}
+
+.menu__foot-note {
+  @include flexcenter;
+  margin-top: 3rem;
+}

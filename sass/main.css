@@ -50,7 +50,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -87,7 +88,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -193,9 +195,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -203,9 +205,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -214,9 +216,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -234,7 +236,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -266,9 +269,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -277,8 +281,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -286,7 +290,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -296,7 +300,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -348,11 +352,11 @@ template {
 /*--------- police Le chic à la française --------- */
 /*--------- police Le délice des papilles ---------*/
 /*--------- police La palette du goût ---------*/
-.menu--palette h1, .menu--delice h1, .menu--chic h1 {
+.menu--chic h1, .menu--delice h1, .menu--palette h1 {
   padding: 8rem 0 1rem 0;
 }
 
-.menu--palette h1, .menu--delice h1 {
+.menu--delice h1, .menu--palette h1 {
   font-size: 6rem;
 }
 
@@ -360,37 +364,71 @@ template {
   font-size: 1.5rem;
 }
 
-.menu--lne p,
-.menu--lne h2, .menu--palette p,
-.menu--palette h2, .menu--delice h2,
-.menu--delice p {
+.menu--delice h2,
+.menu--delice p, .menu--palette p,
+.menu--palette h2, .menu--lne p,
+.menu--lne h2 {
   font-family: "Segoe Print", cursive;
 }
 
-.menu--palette, .menu--delice, .menu--chic {
+.menu--chic, .menu--delice, .menu--palette {
   padding-bottom: 18rem;
+}
+
+@-webkit-keyframes soon-element {
+  to {
+    background-color: #fcca46;
+    -webkit-transform: translate(0, -0.4rem);
+            transform: translate(0, -0.4rem);
+  }
 }
 
 @keyframes soon-element {
   to {
     background-color: #fcca46;
-    transform: translate(0, -0.4rem);
+    -webkit-transform: translate(0, -0.4rem);
+            transform: translate(0, -0.4rem);
   }
 }
-@keyframes shake {
+
+@-webkit-keyframes shake {
   10%, 90% {
-    transform: translateX(-4px);
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
   }
   20%, 80% {
-    transform: translateX(4px);
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
   }
   30%, 50%, 70% {
-    transform: translateX(-6px);
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
   }
   40%, 60% {
-    transform: translateX(6px);
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
   }
 }
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
+  }
+  20%, 80% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+  40%, 60% {
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+  }
+}
+
 /* header et footer variables */
 /* La note enchantée variables */
 /* Le chic à la française variables */
@@ -402,19 +440,24 @@ template {
 /* media queries responsive part */
 /*********************************/
 main {
-  max-width: 80rem;
+  max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 13rem;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   background-color: #579c87;
   font-size: 4rem;
   color: #fcca46;
 }
+
 @media screen and (min-width: 600px) {
   .header {
     font-size: 2rem;
@@ -422,47 +465,76 @@ main {
 }
 
 .restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 0;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .restaurant {
-  box-shadow: 4px 4px 16px 6px #e6e7e9;
+  -webkit-box-shadow: 4px 4px 16px 6px #e6e7e9;
+          box-shadow: 4px 4px 16px 6px #e6e7e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 46%;
   height: 40rem;
   margin: 1rem;
   font-family: "Segoe Print", cursive;
 }
+
 @media screen and (min-width: 1440px) {
   .restaurant {
     width: 100%;
   }
 }
+
 .restaurant h1 {
   padding-bottom: 1rem;
 }
+
 .restaurant h2 {
   font-size: 4rem;
 }
+
 .restaurant a:link {
   text-decoration: none;
 }
+
 .restaurant:hover a {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   opacity: 0.78;
 }
+
 .restaurant a {
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+
+.restaurant a::-moz-selection {
+  background-color: transparent;
+  color: white;
+}
+
 .restaurant a::selection {
   background-color: transparent;
   color: white;
@@ -471,15 +543,18 @@ main {
 .restaurant--lne {
   background-color: #fcdfdb;
 }
+
 .restaurant--lne img {
   width: 100px;
 }
+
 .restaurant--lne h1 {
   margin-top: 0;
   font-size: 3rem;
   color: #3c1218;
   font-family: "Devonshire", cursive;
 }
+
 .restaurant--lne h2 {
   font-family: "Balsamiq Sans", cursive;
   color: #3c1218;
@@ -489,6 +564,7 @@ main {
   background-color: #fff5fe;
   font-family: "Croissant One", cursive;
 }
+
 .restaurant--mc h1 {
   font-size: 2.4rem;
   background: #e38913;
@@ -496,6 +572,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .restaurant--mc h2 {
   font-family: "Noto Serif", serif;
   color: #c67412;
@@ -504,6 +581,7 @@ main {
 .restaurant--md {
   background-color: #edefef;
 }
+
 .restaurant--md h1 {
   font-size: 3.2rem;
   font-family: "Dancing Script", cursive;
@@ -513,6 +591,7 @@ main {
   -webkit-text-fill-color: transparent;
   padding-left: 1rem;
 }
+
 .restaurant--md h2 {
   font-family: "Kalam", cursive;
   color: #0887fb;
@@ -521,6 +600,7 @@ main {
 .restaurant--mp {
   background-color: #fdfffd;
 }
+
 .restaurant--mp h1 {
   font-size: 3.2rem;
   font-family: "Kaushan Script", cursive;
@@ -529,33 +609,50 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .restaurant--mp h2 {
   font-family: "Kalam", cursive;
   color: #72bf56;
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   bottom: 0;
   background-color: #579c87;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 3rem;
 }
+
 @media screen and (min-width: 320px) {
   .footer {
     font-size: 1rem;
     line-height: 0.2;
     margin-bottom: 0.2rem;
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
 @media screen and (min-width: 600px) {
   .footer {
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.5rem;
     width: 100%;
     overflow: hidden;
@@ -564,57 +661,80 @@ main {
     height: 20%;
   }
 }
+
 .footer a {
   margin: 0 6rem;
   text-decoration: none;
   color: #fcca46;
 }
+
 .footer__item:hover {
-  animation: shake 1.5s;
+  -webkit-animation: shake 1.5s;
+          animation: shake 1.5s;
 }
 
 .soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #fcca46;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 2rem;
 }
+
 .soon__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 1rem 2rem;
-  justify-content: center;
-  align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   font-size: 2rem;
   background-color: #579c87;
   border-radius: 50px;
 }
+
 .soon__element span {
   background-color: #579c87;
   width: 0.5rem;
   height: 0.5rem;
   margin: 0 0.6rem;
   border-radius: 50%;
-  animation: soon-element 0.8s infinite alternate;
+  -webkit-animation: soon-element 0.8s infinite alternate;
+          animation: soon-element 0.8s infinite alternate;
 }
+
 .soon__element span:first-child {
   margin-left: 2rem;
 }
+
 .soon__element span:nth-child(2) {
-  animation-delay: 0.16s;
+  -webkit-animation-delay: 0.16s;
+          animation-delay: 0.16s;
 }
+
 .soon__element span:nth-child(3) {
-  animation-delay: 0.37s;
+  -webkit-animation-delay: 0.37s;
+          animation-delay: 0.37s;
 }
 
 .menu--chic {
   background-color: #fff5fe;
   font-family: "Noto Serif", serif;
 }
+
 .menu--chic .header,
 .menu--chic h1,
 .menu--chic h3 {
   font-family: "Croissant One", cursive;
 }
+
 .menu--chic h1 {
   background: #e38913;
   background: linear-gradient(168deg, #e38913, #6e4ccc);
@@ -622,28 +742,35 @@ main {
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
 }
+
 .menu--chic h2,
 .menu--chic p,
 .menu--chic span {
   font-family: "Noto Serif", serif;
 }
+
 .menu--chic .menu__decoration {
   padding-top: 2rem;
 }
+
 .menu--chic .menu__decoration .menu__decoration__tray {
   height: 25px;
   width: 300px;
   margin-top: 0.3rem;
 }
+
 .menu--chic .menu__dishe {
   padding: 0 12rem;
 }
+
 .menu--chic .menu__dishe--1 {
   color: #c67412;
 }
+
 .menu--chic .menu__dishe--2 {
   color: #a56799;
 }
+
 .menu--chic .menu__dishe--3 {
   color: #6e4ccc;
 }
@@ -651,10 +778,12 @@ main {
 .menu--delice {
   background-color: #edefef;
 }
+
 .menu--delice .header,
 .menu--delice h1 {
   font-family: "Dancing Script", cursive;
 }
+
 .menu--delice h1 {
   background: #0022db;
   background: linear-gradient(168deg, #0022db, #0889fb);
@@ -663,11 +792,13 @@ main {
   padding-bottom: 4rem;
   padding-top: 12rem;
 }
+
 .menu--delice .menu__decoration__tray {
   height: 40px;
   width: 290px;
   margin: 0rem 1rem;
 }
+
 .menu--delice .menu__dishe {
   color: #000000;
   padding: 0 10.5rem;
@@ -676,13 +807,16 @@ main {
 .menu--palette {
   background-color: #fdfffd;
 }
+
 .menu--palette .header,
 .menu--palette h1 {
   font-family: "Kaushan Script", cursive;
 }
+
 .menu--palette h2 {
   padding-top: 2rem;
 }
+
 .menu--palette h1 {
   background: #3d923a;
   background: linear-gradient(168deg, #3d923a, #beff7f);
@@ -691,22 +825,29 @@ main {
   padding-bottom: 3rem;
   padding-top: 12rem;
 }
+
 .menu--palette .menu__dishe {
   padding: 0 8rem;
 }
+
 .menu--palette .menu__decoration__tray {
   height: 40px;
   width: 315px;
   margin: 2rem 1rem;
 }
+
 .menu--palette h3 {
   font-size: 3.2rem;
 }
 
 .title-restaurant p {
   font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Balsamiq Sans", cursive;
 }
 
@@ -715,32 +856,39 @@ main {
   color: #3c1218;
   padding-bottom: 3rem;
 }
+
 .menu--lne .header,
 .menu--lne h1,
 .menu--lne h3 {
   font-family: "Devonshire", cursive;
 }
+
 .menu--lne h2 {
   padding-top: 3.9rem;
   margin: 0;
 }
+
 .menu--lne .menu__decoration {
   padding: 0 5rem;
 }
+
 .menu--lne .menu__decoration__tray {
   height: 25px;
   width: 270px;
   padding: 0;
   margin: 2.5rem 1rem;
 }
+
 .menu--lne .menu__dishe {
   padding: 0 8rem;
 }
+
 .menu--lne .note {
   width: 120px;
   height: 120px;
   margin-top: 3rem;
 }
+
 .note2 {
   width: 70px;
   height: 70px;
@@ -748,8 +896,12 @@ main {
 }
 
 .menu__foot-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 3rem;
 }
 
@@ -759,43 +911,61 @@ main {
   max-width: 1100px;
   font-size: 1.3rem;
   line-height: 2.8rem;
-  box-shadow: 4px 4px 16px 6px #e6e7e9;
+  -webkit-box-shadow: 4px 4px 16px 6px #e6e7e9;
+          box-shadow: 4px 4px 16px 6px #e6e7e9;
   /* soulignement au passage de la souris des titres des repas"*/
 }
+
 .menu h1 {
   font-size: 4rem;
   margin: 0;
 }
+
 .menu .menu__title {
   text-align: center;
 }
+
 .menu .menu__decoration {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 2rem 3rem;
   padding: 2rem 0rem;
 }
+
 .menu .menu__decoration .menu__decoration__tray {
   padding-top: 2rem;
 }
+
 .menu .menu__dishe {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .menu h3 {
   font-size: 3.2rem;
 }
+
 .menu .menu__decoration h2::after {
-  content: "";
+  content: '';
   display: block;
   width: 0;
-  height: 0.2rem;
+  height: 0.20rem;
   background-color: #fcca46;
-  transition: all 0.5s ease-in-out;
-}
-.menu .menu__decoration h2:hover::after {
-  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-/*# sourceMappingURL=style.css.map */
+.menu .menu__decoration h2:hover::after {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=main.css.map */
