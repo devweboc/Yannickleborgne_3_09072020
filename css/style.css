@@ -446,7 +446,7 @@ main {
   width: 46%;
   height: 40rem;
   margin: 1rem;
-  font-family: "Segoe Print", cursive;
+  font-family: "Segoe Print V1", cursive;
 }
 @media screen and (min-width: 1440px) {
   .restaurant {
