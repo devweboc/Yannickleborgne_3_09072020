@@ -50,7 +50,14 @@
 
 
 
-@mixin screen-max-width ($format: 'tablet-up') {
+@mixin screen-max-width ($format: '') {
+    @media screen and (max-width: map-get($breakpoints,$format)) {
+        @content;
+
+    }
+}
+
+@mixin screen-min-width ($format: '') {
     @media screen and (min-width: map-get($breakpoints,$format)) {
         @content;
 

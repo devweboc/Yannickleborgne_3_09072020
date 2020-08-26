@@ -7,10 +7,16 @@
 
   margin: 0 auto;
   margin-bottom: $margin-bottom-15;
-  max-width: 1100px;
-  font-size: 1.3rem;
+  max-width: 68rem;
+  font-size: 1.27rem;
   line-height: 2.8rem;
   @include shadow-card;
+  @include screen-max-width('tablet-down'){
+    width:100%; 
+    font-size: 1.1rem;
+    
+   
+}
 
 
   h1 {
@@ -29,19 +35,43 @@
     @include flex-between;
     margin: 2rem 3rem;
     padding: 2rem 0rem;
+    @include screen-max-width('tablet-down'){      
+      font-size: 1rem;     
+    }
+    @include screen-max-width('tablet-up'){
+      width:100%;
+      
+      
+      
+     
+  }
 
 
 
     .menu__decoration__tray {
       padding-top: 2rem;
+      
+      
     }
   }
 
   .menu__dishe {
     @include flex-between;
+    @include screen-max-width('tablet-down'){
+      padding: 3rem;
+      
+      
+     
+  }
 
     span {
       @extend %size-price;
+      @include screen-max-width('tablet-down'){
+      
+        font-size: 1.4rem;
+        
+       
+    }
 
     }
   }

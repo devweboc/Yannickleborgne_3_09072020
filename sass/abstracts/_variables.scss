@@ -1,4 +1,4 @@
-$main-width: 1300px;
+$main-width: 85rem;
 
 $margin-bottom-15: 15rem;
 
@@ -71,8 +71,10 @@ $transition:all 0.5s ease-in-out;
 
 
 $breakpoints: (
-    phone-up:320px,
-    tablet-up: 600px,
-    tablet-down: 1010px,    
-    desktop-down: 1280px,
-    widescreen-up: 1440px);
+    phone-up:480px,
+    phone-down:600px,
+    tablet-up: 768px,
+    tablet-down: 1020px, 
+    other:1100px,   
+    desktop-down: 1600px,
+    widescreen-up: 1601px);

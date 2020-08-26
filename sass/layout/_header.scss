@@ -8,7 +8,17 @@
 
 @include screen-max-width ($format: 'tablet-up'){ 
     font-size: 2rem;
+       
+    
+    
+    
 
+}
+@include screen-max-width('tablet-down'){
+      
+    font-size: 1.8rem;
+    width:100%;  
+   
 }
 
 }

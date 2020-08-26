@@ -1,30 +1,54 @@
 .restaurants {
-    @include flex-center-align-text;
-    padding: 0;
+    @include screen-min-width ($format:'tablet-down');
+    @include flex-center-align-text;    
     flex-wrap: wrap;
-    box-sizing: border-box;
+     @include screen-max-width('widescreen-up') {
+    max-width: 100%;
+  }
+  @include screen-max-width('tablet-up') {
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
 
 }
 
 .restaurant {
     @include shadow-card;
     @include flex-center-align-text;
-    width: 46%;
+    width: 45%;
     height: 40rem;
     margin: 1rem;
     font-family: $font-family-text-principal;
 
-    @include screen-max-width('widescreen-up'){
-        width: 100%;
+    @include screen-max-width ($format:'tablet-down'){
+        width:90%;
+       
+    }
+    @include screen-min-width ($format:'tablet-down'){
+        font-size: 1.7rem;
+        width:44%;
+    }
+    @include screen-max-width ($format:'phone-up'){
+        width: 96%;
+        margin-bottom: 1rem;
     }
     
-    h1 {
-
+    
+    h1 {       
+        
+        @include screen-max-width ($format:'tablet-down'){
+            font-size: 1rem;
+        }
         padding-bottom: 1rem;
+
     }
 
     h2 {
-        font-size: 4rem;
+        @include screen-max-width ($format:'tablet-down'){
+            font-size: 3rem;
+        }
+        font-size:4rem;
     }
 
 
@@ -71,6 +95,12 @@
     h2 {
         font-family: $lne-family-font-only;
         color: $lne-text-color;
+        @include screen-max-width('tablet-down'){
+        font-size: 1rem;
+      
+      
+     
+        }
     }
 }
 
@@ -81,7 +111,11 @@
 
 
     h1 {
-        font-size: 2.4rem;
+        @include screen-max-width ($format:'other'){
+            font-size: 2rem;
+           
+        }
+        font-size: 2.3rem;
         @include gradientcolor ($colorA: $chic-text-color-1, $colorB: $chic-text-color-3);
 
 
