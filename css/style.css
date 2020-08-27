@@ -422,6 +422,11 @@ main {
   font-size: 4rem;
   color: #fcca46;
 }
+@media screen and (max-width: 1601px) {
+  .header {
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .header {
     font-size: 2rem;
@@ -790,7 +795,7 @@ main {
 .menu--lne .header,
 .menu--lne h1,
 .menu--lne h3 {
-  font-family: "Devonshire", cursive;
+  font-family: "Segoe Print V1";
 }
 .menu--lne h2 {
   padding-top: 3.9rem;
@@ -939,6 +944,21 @@ main {
 .menu .menu__decoration h2:hover::after {
   width: 100%;
   transition: all 0.5s ease-in-out;
+}
+
+.mentions h1 {
+  font-size: 3rem;
+}
+.mentions h2 {
+  font-size: 2rem;
+  font-family: "Segoe Print V1";
+}
+.mentions h3 {
+  font-size: 1.75rem;
+}
+.mentions p {
+  font-size: 1.5rem;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
