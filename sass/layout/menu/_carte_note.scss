@@ -2,6 +2,9 @@
   font-size: 3rem;
   @include flexcenter;
   font-family: $lne-family-font-only;
+  @include screen-max-width('phone-down'){
+    text-align: center;
+  }
 }
 
 .menu--lne {
@@ -25,20 +28,14 @@
 
   .menu__decoration {
     padding: 0 5rem;
-    @include screen-max-width('tablet-down'){
-     
-      
-      
-      
-     
-    }
+    
   }
 
   .menu__decoration__tray {
     height: 1.56rem;
-    width: 17rem;
-    padding: 0;
-    margin: 2.5rem 0.5rem;
+    width:17rem;
+    
+    margin: 2.5rem ;
    
 
   }
