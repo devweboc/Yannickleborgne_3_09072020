@@ -4,6 +4,10 @@
   font-family: $lne-family-font-only;
   @include screen-max-width('phone-down'){
     text-align: center;
+    font-size:1.75rem;    
+  }
+  @include screen-max-width ('tablet-up'){
+    font-size:2rem;
   }
 }
 
@@ -58,12 +62,20 @@
 }
 
 .note2 {
-  width: 70px;
-  height: 70px;
+  width: 4.3rem;
+  height: 4.3rem;
   margin: 2rem 0.7rem;
+  
 }
 
 .menu__foot-note {
   @include flexcenter;
   margin-top: 3rem;
+  @include screen-max-width ('phone-up'){
+   flex-direction:column; 
+   text-align: center;
+   align-items: center;
+  margin:0; 
+  
+  }
 }

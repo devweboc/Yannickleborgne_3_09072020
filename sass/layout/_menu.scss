@@ -12,7 +12,7 @@
   line-height: 2.8rem;
   @include shadow-card;
   @include screen-max-width('tablet-down'){
-    width:100%; 
+    width:auto; 
     font-size: 1.1rem;  
     text-align: center; 
   }

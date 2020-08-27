@@ -429,7 +429,7 @@ main {
 }
 @media screen and (max-width: 1020px) {
   .header {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     width: 100%;
   }
 }
@@ -773,6 +773,12 @@ main {
 @media screen and (max-width: 600px) {
   .title-restaurant p {
     text-align: center;
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title-restaurant p {
+    font-size: 2rem;
   }
 }
 
@@ -807,8 +813,8 @@ main {
   margin-top: 3rem;
 }
 .note2 {
-  width: 70px;
-  height: 70px;
+  width: 4.3rem;
+  height: 4.3rem;
   margin: 2rem 0.7rem;
 }
 
@@ -816,6 +822,14 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+}
+@media screen and (max-width: 480px) {
+  .menu__foot-note {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 .menu {
@@ -829,7 +843,7 @@ main {
 }
 @media screen and (max-width: 1020px) {
   .menu {
-    width: 100%;
+    width: auto;
     font-size: 1.1rem;
     text-align: center;
   }
