@@ -9,6 +9,7 @@
     justify-content: center;
     flex-direction: column;
     max-width: 100%;
+    font-size:2rem;
   }
 
 }
@@ -36,7 +37,7 @@
     
     
     h1 {       
-        
+      
         @include screen-max-width ($format:'tablet-down'){
             font-size: 1rem;
         }
@@ -89,6 +90,10 @@
         font-size: 3rem;
         color: $lne-text-color;
         font-family: $lne-font-family-title;
+        @include screen-max-width ($format:'phone-up'){
+            font-size: 2rem;
+           
+        }
 
     }
 
@@ -111,10 +116,13 @@
 
 
     h1 {
-        @include screen-max-width ($format:'other'){
-            font-size: 2rem;
+        
+        @include screen-max-width ($format:'phone-down'){
+            font-size: 1.8rem;
+            padding:0, 4rem;
            
         }
+        
         font-size: 2.3rem;
         @include gradientcolor ($colorA: $chic-text-color-1, $colorB: $chic-text-color-3);
 
@@ -151,7 +159,10 @@
         font-size: 3.2rem;
         font-family: $palette-font-family-title;
         @include gradientcolor ($colorA: $palette-text-color-1, $colorB: $palette-text-color-2);
-
+        @include screen-max-width ($format:'phone-up'){
+        font-size: 2rem;
+           
+        }
     }
 
     h2 {
