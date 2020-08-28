@@ -27,7 +27,14 @@
     margin: 0;
 
   }
-
+  h2{
+    font-size:2.5rem;
+    @include screen-max-width('tablet-down'){      
+      font-size: 2rem; 
+      
+       
+    }
+  }
   .menu__title {
     text-align: center;
   }

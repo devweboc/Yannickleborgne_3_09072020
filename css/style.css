@@ -680,6 +680,9 @@ main {
 .menu--chic .menu__title {
   padding-bottom: 6rem;
 }
+.menu--chic h2 {
+  font-size: 2rem !important;
+}
 .menu--chic .header,
 .menu--chic h1,
 .menu--chic h3 {
@@ -701,6 +704,7 @@ main {
 .menu--chic p,
 .menu--chic span {
   font-family: "Noto Serif", serif;
+  font-size: 1.6rem;
 }
 .menu--chic .menu__decoration {
   padding-top: 2rem;
@@ -893,6 +897,14 @@ main {
 @media screen and (max-width: 768px) {
   .menu h1 {
     font-size: 3rem;
+  }
+}
+.menu h2 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 1020px) {
+  .menu h2 {
+    font-size: 2rem;
   }
 }
 .menu .menu__title {
