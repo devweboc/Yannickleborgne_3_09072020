@@ -426,7 +426,7 @@ main {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .header {
     font-size: 2.5rem;
     width: 100%;
@@ -465,12 +465,12 @@ main {
   margin: 1rem;
   font-family: "Caveat", cursive;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .restaurant {
     width: 90%;
   }
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1024px) {
   .restaurant {
     font-size: 1.7rem;
     width: 44%;
@@ -485,7 +485,7 @@ main {
 .restaurant h1 {
   padding-bottom: 1rem;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .restaurant h1 {
     font-size: 1rem;
   }
@@ -493,7 +493,7 @@ main {
 .restaurant h2 {
   font-size: 4rem;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .restaurant h2 {
     font-size: 3rem;
   }
@@ -539,7 +539,7 @@ main {
   font-family: "Balsamiq Sans", cursive;
   color: #3c1218;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .restaurant--lne h2 {
     font-size: 2.8rem;
   }
@@ -614,7 +614,7 @@ main {
   justify-content: space-between;
   font-size: 3rem;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .footer {
     font-size: 1.8rem;
   }
@@ -700,7 +700,7 @@ main {
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .menu--chic h1 {
     font-size: 1rem;
   }
@@ -725,7 +725,19 @@ main {
   margin-top: 0.3rem;
 }
 .menu--chic .menu__dishe {
-  padding: 0 12rem;
+  padding: 0 6rem;
+}
+@media screen and (max-width: 1024px) {
+  .menu--chic .menu__dishe {
+    padding: 0 3rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--chic .menu__dishe {
+    flex-direction: column;
+    align-text: center;
+  }
 }
 .menu--chic .menu__dishe--1 {
   color: #c67412;
@@ -888,7 +900,7 @@ main {
   box-shadow: 4px 4px 16px 6px #e6e7e9;
   /* soulignement au passage de la souris des titres des repas"*/
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .menu {
     width: auto;
     font-size: 1.1rem;
@@ -907,7 +919,7 @@ main {
 .menu h2 {
   font-size: 2.5rem;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .menu h2 {
     font-size: 2rem;
   }
@@ -921,7 +933,7 @@ main {
   margin: 2rem 3rem;
   padding: 2rem 0rem;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .menu .menu__decoration {
     font-size: 1rem;
   }
@@ -938,7 +950,7 @@ main {
 .menu .menu__decoration .menu__decoration__tray {
   padding-top: 2rem;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .menu .menu__decoration .menu__decoration__tray {
     width: 30%;
   }
@@ -952,7 +964,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .menu .menu__dishe {
     padding: 3rem;
     font-size: 1.6rem;
@@ -966,7 +978,7 @@ main {
     text-align: center;
   }
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .menu .menu__dishe span {
     font-size: 1.6rem;
   }

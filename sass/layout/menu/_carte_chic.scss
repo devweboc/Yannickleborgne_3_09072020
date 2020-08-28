@@ -51,7 +51,17 @@
   }
 
   .menu__dishe {
-    padding: 0 12rem;
+    padding: 0 6rem;
+    @include screen-max-width ('tablet-down') {
+      padding:0 3rem; 
+      font-size:2rem;
+      
+
+      }
+      @include screen-max-width ('tablet-up') {
+        flex-direction:column;
+      align-text:center;
+    }
   }
 
   .menu__dishe--1 {
