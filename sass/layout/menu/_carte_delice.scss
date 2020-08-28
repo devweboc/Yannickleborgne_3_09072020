@@ -27,6 +27,12 @@
     @extend %font-family-commun;
   }
 
+  .menu__decoration {
+    @include screen-max-width ('tablet-up') {
+      padding: 4rem 0 !important;
+    }
+  }
+
   .menu__dishe {
     color: $delice-text-color-carte;
     padding: 0 10.5rem;

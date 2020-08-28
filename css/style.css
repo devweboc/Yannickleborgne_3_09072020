@@ -7,7 +7,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Devonshire&display=swap");
-@import url(//db.onlinewebfonts.com/c/c455d94eee43dc4ceeb83c0c0fd0d4c8?family=Segoe+Print);
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Noto+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam&family=Kaushan+Script&display=swap");
@@ -345,13 +345,6 @@ template {
 
 /*--------- police La note enchantée ---------*/
 /*--------- police tarif cartes la note enchantée + le délice des papilles + la palette du goût---------*/
-@font-face {
-  font-family: "Segoe Print V1";
-  src: url("c455d94eee43dc4ceeb83c0c0fd0d4c8.eot");
-  /* IE9*/
-  src: url("c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), url("c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), url("c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), url("c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"), url("c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print V1") format("svg");
-  /* iOS 4.1- */
-}
 /*--------- police Le chic à la française --------- */
 /*--------- police Le délice des papilles ---------*/
 /*--------- police La palette du goût ---------*/
@@ -364,14 +357,15 @@ template {
 }
 
 .menu .menu__dishe span {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .menu--lne p,
 .menu--lne h2, .menu--palette p,
 .menu--palette h2, .menu--delice h2,
 .menu--delice p {
-  font-family: "Segoe Print", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
 }
 
 .menu--palette, .menu--delice, .menu--chic {
@@ -469,7 +463,7 @@ main {
   width: 45%;
   height: 40rem;
   margin: 1rem;
-  font-family: "Segoe Print V1", cursive;
+  font-family: "Caveat", cursive;
 }
 @media screen and (max-width: 1020px) {
   .restaurant {
@@ -683,6 +677,9 @@ main {
   background-color: #fff5fe;
   font-family: "Noto Serif", serif;
 }
+.menu--chic .menu__title {
+  padding-bottom: 6rem;
+}
 .menu--chic .header,
 .menu--chic h1,
 .menu--chic h3 {
@@ -707,6 +704,11 @@ main {
 }
 .menu--chic .menu__decoration {
   padding-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .menu--chic .menu__decoration {
+    padding: 4rem 0 !important;
+  }
 }
 .menu--chic .menu__decoration .menu__decoration__tray {
   height: 1.56rem;
@@ -745,6 +747,11 @@ main {
   height: 2.5rem;
   width: 15rem;
   margin: 0rem 1rem;
+}
+@media screen and (max-width: 768px) {
+  .menu--delice .menu__decoration {
+    padding: 4rem 0 !important;
+  }
 }
 .menu--delice .menu__dishe {
   color: #000000;
@@ -807,7 +814,7 @@ main {
 .menu--lne .header,
 .menu--lne h1,
 .menu--lne h3 {
-  font-family: "Segoe Print V1";
+  font-family: "Devonshire", cursive;
 }
 .menu--lne h2 {
   padding-top: 3.9rem;
@@ -824,11 +831,25 @@ main {
 .menu--lne .menu__dishe {
   padding: 0 8rem;
 }
+.menu--lne span {
+  font-size: 1rem;
+}
 .menu--lne .note {
   width: 7.5rem;
   height: 7.5rem;
   margin-top: 3rem;
 }
+@media screen and (max-width: 768px) {
+  .menu--lne p,
+.menu--lne h2 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .note2 {
   width: 4.3rem;
   height: 4.3rem;
@@ -917,6 +938,7 @@ main {
 @media screen and (max-width: 1020px) {
   .menu .menu__dishe {
     padding: 3rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -928,12 +950,12 @@ main {
 }
 @media screen and (max-width: 1020px) {
   .menu .menu__dishe span {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 768px) {
   .menu .menu__dishe span {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 768px) {

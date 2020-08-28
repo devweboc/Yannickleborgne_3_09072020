@@ -21,7 +21,7 @@
   h1,
   h3 {
 
-    font-family:"Segoe Print V1";
+    font-family:$lne-font-family-title;
   }
 
   h2 {
@@ -48,7 +48,9 @@
   .menu__dishe {
     padding: 0 8rem;
   }
-
+  span{
+    font-size:1rem;
+  }
   .note {
     width: 7.5rem;
     height: 7.5rem;
@@ -59,6 +61,13 @@
   p,
   h2 {
     @extend %font-family-commun;
+    @include screen-max-width('tablet-up'){
+      flex-direction: column;
+      text-align: center;
+      align-items: center;      
+      margin:0;
+      padding:0;
+    }
   }
 }
 
