@@ -2,12 +2,15 @@
   background-color: $chic-background;
   font-family: $chic-font-family-texte;
   @extend %padding-bottom-10;
-  .menu__title{
+
+  .menu__title {
     padding-bottom: 6rem;
-  }  
-  h2{
-    font-size:2rem !important;
   }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
   .header,
   h1,
   h3 {
@@ -15,27 +18,29 @@
   }
 
   h1 {
-    
+
     @include gradientcolor ($colorA: $chic-text-color-1, $colorB: $chic-text-color-3);
     @extend %font-padding;
     font-size: 3rem;
-    @include screen-max-width ('tablet-down'){
+
+    @include screen-max-width ('tablet-down') {
       font-size: 1rem;
-     
-  }
+
+    }
   }
 
   h2,
   p,
   span {
     font-family: $chic-font-family-texte;
-    font-size:1.6rem;
+    font-size: 1.6rem;
   }
 
   .menu__decoration {
     padding-top: 2rem;
-    @include screen-max-width ('tablet-up'){
-      padding:4rem 0 !important;
+
+    @include screen-max-width ('tablet-up') {
+      padding: 4rem 0 !important;
     }
 
     .menu__decoration__tray {

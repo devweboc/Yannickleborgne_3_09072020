@@ -7,44 +7,46 @@
   justify-content: space-between;
   font-size: 3rem;
 
-  @include screen-max-width('tablet-down'){
-      
+  @include screen-max-width('tablet-down') {
+
     font-size: 1.8rem;
-    
-   
-}
-@include screen-max-width('tablet-up'){
-      
-  font-size: 1rem;
-   
-}
-@include screen-max-width('phone-down'){
-      
-  font-size: 0.7rem;
-  text-align: center;
-  display: inline-block;
-  
- 
-}
 
 
+  }
+
+  @include screen-max-width('tablet-up') {
+
+    font-size: 1rem;
+
+  }
+
+  @include screen-max-width('phone-down') {
+
+    font-size: 0.7rem;
+    text-align: center;
+    display: inline-block;
 
 
-  a {
-  margin: 0 6rem;
-  text-decoration: none;
-  color: $color-brand-text
-}
-
-
-&__item {
-  &:hover {
-    animation: shake 1.5s;
   }
 
 
 
 
-}
+  a {
+    margin: 0 6rem;
+    text-decoration: none;
+    color: $color-brand-text
+  }
+
+
+  &__item {
+    &:hover {
+      animation: shake 1.5s;
+    }
+
+
+
+
+  }
 
 }

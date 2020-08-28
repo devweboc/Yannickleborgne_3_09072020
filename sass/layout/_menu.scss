@@ -11,30 +11,35 @@
   font-size: 1.27rem;
   line-height: 2.8rem;
   @include shadow-card;
-  @include screen-max-width('tablet-down'){
-    width:auto; 
-    font-size: 1.1rem;  
-    text-align: center; 
+
+  @include screen-max-width('tablet-down') {
+    width: auto;
+    font-size: 1.1rem;
+    text-align: center;
   }
 
 
 
   h1 {
-    @include screen-max-width('tablet-up'){
+    @include screen-max-width('tablet-up') {
       font-size: 3rem;
-     }
+    }
+
     font-size: 4rem;
     margin: 0;
 
   }
-  h2{
-    font-size:2.5rem;
-    @include screen-max-width('tablet-down'){      
-      font-size: 2rem; 
-      
-       
+
+  h2 {
+    font-size: 2.5rem;
+
+    @include screen-max-width('tablet-down') {
+      font-size: 2rem;
+
+
     }
   }
+
   .menu__title {
     text-align: center;
   }
@@ -45,79 +50,89 @@
     @include flex-between;
     margin: 2rem 3rem;
     padding: 2rem 0rem;
-    @include screen-max-width('tablet-down'){      
-      font-size: 1rem; 
-      
-       
+
+    @include screen-max-width('tablet-down') {
+      font-size: 1rem;
+
+
     }
-    @include screen-max-width('tablet-up'){
+
+    @include screen-max-width('tablet-up') {
       flex-direction: column;
       text-align: center;
-      align-items: center;      
-      margin:0;
-      padding:0;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
-    
+
 
 
 
     .menu__decoration__tray {
       padding-top: 2rem;
-      @include screen-max-width('tablet-down'){
-        width:30%;
-        
+
+      @include screen-max-width('tablet-down') {
+        width: 30%;
+
       }
-      @include screen-max-width('tablet-up'){
+
+      @include screen-max-width('tablet-up') {
         padding: 0;
       }
-      
+
     }
   }
 
   .menu__dishe {
     @include flex-between;
-    @include screen-max-width('tablet-down'){
-      padding: 3rem; 
-      font-size: 1.6rem;    
+
+    @include screen-max-width('tablet-down') {
+      padding: 3rem;
+      font-size: 1.6rem;
     }
-    
-    @include screen-max-width('phone-down'){
-      flex-direction: column; 
-      margin:0;
-      padding:1rem;   
+
+    @include screen-max-width('phone-down') {
+      flex-direction: column;
+      margin: 0;
+      padding: 1rem;
+      text-align: center;
+
     }
 
     span {
       @extend %size-price;
-      @include screen-max-width('tablet-down'){
-        
-        font-size: 1.6rem;      
-       
-    }
-    @include screen-max-width('tablet-up'){
-      font-size: 1.6rem;
-      
-     }
+
+      @include screen-max-width('tablet-down') {
+
+        font-size: 1.6rem;
+
+      }
+
+      @include screen-max-width('tablet-up') {
+        font-size: 1.6rem;
+
+      }
 
     }
   }
-h2{ 
-  @include screen-max-width('tablet-up'){
-   
-   padding:0;
-   margin:0;  
+
+  h2 {
+    @include screen-max-width('tablet-up') {
+
+      padding: 0;
+      margin: 0;
+    }
+
+
+
+
   }
 
+  h3 {
+    font-size: 3.2rem;
 
 
-
-}
-
-h3 {
-  font-size: 3.2rem;
-
- 
-}
+  }
 
   /* soulignement au passage de la souris des titres des repas"*/
   .menu__decoration h2::after {
