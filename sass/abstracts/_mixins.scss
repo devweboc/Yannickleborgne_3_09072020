@@ -55,7 +55,6 @@
 @mixin screen-max-width ($format: '') {
     @media screen and (max-width: map-get($breakpoints, $format)) {
         @content;
-
     }
 }
 
