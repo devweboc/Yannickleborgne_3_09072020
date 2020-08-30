@@ -8,7 +8,7 @@
   }
 
   h2 {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   .header,
@@ -33,16 +33,14 @@
   p,
   span {
     font-family: $chic-font-family-texte;
-    font-size: 1.6rem;
+
+    
   }
 
   .menu__decoration {
     padding-top: 2rem;
 
-    @include screen-max-width ('tablet-up') {
-      padding: 4rem 0 !important;
-    }
-
+   
     .menu__decoration__tray {
       height: 1.56rem;
       width: 17rem;
@@ -52,20 +50,28 @@
 
   .menu__dishe {
     padding: 0 6rem;
+    
+    
+    
     @include screen-max-width ('tablet-down') {
-      padding:0 3rem; 
-      font-size:2rem;
+      padding:0; 
+      margin:0;
       
-
       }
       @include screen-max-width ('tablet-up') {
         flex-direction:column;
-      align-text:center;
+        text-align:center;
+        font-size:1rem;
     }
+    
   }
+  
 
   .menu__dishe--1 {
     color: $chic-text-color-2;
+    .menu__dishe {
+     
+    }
   }
 
   .menu__dishe--2 {

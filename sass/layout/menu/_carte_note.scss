@@ -1,16 +1,18 @@
-.title-restaurant p {
+.title-restaurant  {
   font-size: 3rem;
   @include flexcenter;
   font-family: $lne-family-font-only;
 
+  
+@include screen-max-width('tablet-down'){
+  font-size:2rem;
+}
   @include screen-max-width('phone-down') {
     text-align: center;
     font-size: 1.75rem;
   }
 
-  @include screen-max-width ('tablet-up') {
-    font-size: 2rem;
-  }
+ 
 }
 
 .menu--lne {

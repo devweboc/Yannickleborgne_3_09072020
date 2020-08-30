@@ -17,4 +17,9 @@
 
         color: black;
     }
+    @include screen-max-width ('other') {
+        padding: 1rem;
+        text-align:justify;
+
+    }
 }

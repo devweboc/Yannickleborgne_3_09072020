@@ -416,6 +416,12 @@ main {
   font-size: 4rem;
   color: #fcca46;
 }
+.header a {
+  color: #fcca46;
+}
+.header :link {
+  text-decoration: none;
+}
 @media screen and (max-width: 1601px) {
   .header {
     font-size: 4rem;
@@ -424,6 +430,7 @@ main {
 @media screen and (max-width: 768px) {
   .header {
     font-size: 2rem;
+    line-height: 0.8rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -439,11 +446,6 @@ main {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-}
-@media screen and (max-width: 1601px) {
-  .restaurants {
-    max-width: 100%;
-  }
 }
 @media screen and (max-width: 768px) {
   .restaurants {
@@ -473,7 +475,7 @@ main {
 @media screen and (min-width: 1024px) {
   .restaurant {
     font-size: 1.7rem;
-    width: 44%;
+    width: 42%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -493,7 +495,7 @@ main {
 .restaurant h2 {
   font-size: 4rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .restaurant h2 {
     font-size: 3rem;
   }
@@ -556,6 +558,17 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: ) {
+  .restaurant--mc h1 {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .restaurant--mc h1 {
+    font-size: 1.9rem;
+    padding: 0.6rem;
+  }
+}
 @media screen and (max-width: 600px) {
   .restaurant--mc h1 {
     font-size: 1.8rem;
@@ -579,6 +592,16 @@ main {
   -webkit-text-fill-color: transparent;
   padding-left: 1rem;
 }
+@media screen and (max-width: 1200px) {
+  .restaurant--md h1 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .restaurant--md h1 {
+    padding: 0 1.5rem;
+  }
+}
 .restaurant--md h2 {
   font-family: "Kalam", cursive;
   color: #0887fb;
@@ -594,6 +617,11 @@ main {
   background: linear-gradient(168deg, #3d923a, #beff7f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 1200px) {
+  .restaurant--mp h1 {
+    font-size: 3rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .restaurant--mp h1 {
@@ -626,9 +654,9 @@ main {
 }
 @media screen and (max-width: 600px) {
   .footer {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: center;
-    display: inline-block;
+    flex-direction: column;
   }
 }
 .footer a {
@@ -686,7 +714,7 @@ main {
   padding-bottom: 6rem;
 }
 .menu--chic h2 {
-  font-size: 2rem !important;
+  font-size: 2rem;
 }
 .menu--chic .header,
 .menu--chic h1,
@@ -709,15 +737,9 @@ main {
 .menu--chic p,
 .menu--chic span {
   font-family: "Noto Serif", serif;
-  font-size: 1.6rem;
 }
 .menu--chic .menu__decoration {
   padding-top: 2rem;
-}
-@media screen and (max-width: 768px) {
-  .menu--chic .menu__decoration {
-    padding: 4rem 0 !important;
-  }
 }
 .menu--chic .menu__decoration .menu__decoration__tray {
   height: 1.56rem;
@@ -729,14 +751,15 @@ main {
 }
 @media screen and (max-width: 1024px) {
   .menu--chic .menu__dishe {
-    padding: 0 3rem;
-    font-size: 2rem;
+    padding: 0;
+    margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
   .menu--chic .menu__dishe {
     flex-direction: column;
-    align-text: center;
+    text-align: center;
+    font-size: 1rem;
   }
 }
 .menu--chic .menu__dishe--1 {
@@ -771,7 +794,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .menu--delice .menu__decoration {
-    padding: 4rem 0 !important;
+    padding: 4rem 0;
   }
 }
 .menu--delice .menu__dishe {
@@ -809,21 +832,21 @@ main {
   font-size: 3.2rem;
 }
 
-.title-restaurant p {
+.title-restaurant {
   font-size: 3rem;
   display: flex;
   justify-content: center;
   font-family: "Balsamiq Sans", cursive;
 }
-@media screen and (max-width: 600px) {
-  .title-restaurant p {
-    text-align: center;
-    font-size: 1.75rem;
+@media screen and (max-width: 1024px) {
+  .title-restaurant {
+    font-size: 2rem;
   }
 }
-@media screen and (max-width: 768px) {
-  .title-restaurant p {
-    font-size: 2rem;
+@media screen and (max-width: 600px) {
+  .title-restaurant {
+    text-align: center;
+    font-size: 1.75rem;
   }
 }
 
@@ -913,13 +936,15 @@ main {
 }
 @media screen and (max-width: 768px) {
   .menu h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
-.menu h2 {
-  font-size: 2.5rem;
+@media screen and (max-width: 768px) {
+  .menu h2 {
+    font-size: 1.5rem;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .menu h2 {
     font-size: 2rem;
   }
@@ -1023,6 +1048,12 @@ main {
 .mentions p {
   font-size: 1.5rem;
   color: black;
+}
+@media screen and (max-width: 1200px) {
+  .mentions {
+    padding: 1rem;
+    text-align: justify;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

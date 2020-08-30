@@ -4,6 +4,12 @@
     background-color: $color-brand-background;
     font-size: 4rem;
     color: $color-brand-text;
+        a{
+          color: $color-brand-text;
+        }
+        :link {
+            text-decoration:none;
+        }
 
     @include screen-max-width('widescreen-up') {
         font-size: 4rem;
@@ -12,6 +18,8 @@
 
     @include screen-max-width ($format: 'tablet-up') {
         font-size: 2rem;
+        line-height: 0.8rem;
+
 
 
 
