@@ -13,6 +13,10 @@
         background-color: $color-brand-background;
         border-radius: 50px;
 
+        @include screen-max-width ($format:'phone-up') {
+            font-size: 1.5rem;
+        }
+
 
 
         span {

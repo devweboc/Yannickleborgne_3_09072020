@@ -13,11 +13,14 @@
     @extend %font-size-h1;
     padding-bottom: 4rem;
     padding-top: 12rem;
+    @include screen-max-width('tablet-up'){
+      padding-top:6rem;
+    }
   }
 
   .menu__decoration__tray {
-    height: 40px;
-    width: 290px;
+    height: 2.5rem;
+    width: 15rem;
     margin: 0rem 1rem;
 
   }
@@ -25,6 +28,12 @@
   h2,
   p {
     @extend %font-family-commun;
+  }
+
+  .menu__decoration {
+    @include screen-max-width ('tablet-up') {
+      padding: 4rem 0 
+    }
   }
 
   .menu__dishe {

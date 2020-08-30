@@ -1,7 +1,18 @@
-.title-restaurant p {
+.title-restaurant  {
   font-size: 3rem;
   @include flexcenter;
   font-family: $lne-family-font-only;
+
+  
+@include screen-max-width('tablet-down'){
+  font-size:2rem;
+}
+  @include screen-max-width('phone-down') {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+
+ 
 }
 
 .menu--lne {
@@ -21,43 +32,89 @@
     padding-top: 3.9rem;
     margin: 0;
 
+
   }
 
   .menu__decoration {
     padding: 0 5rem;
+
   }
 
   .menu__decoration__tray {
-    height: 25px;
-    width: 270px;
-    padding: 0;
-    margin: 2.5rem 1rem;
+    height: 1.56rem;
+    width: 17rem;
+
+    margin: 2.5rem;
+
+
   }
 
   .menu__dishe {
     padding: 0 8rem;
   }
 
+  span {
+    font-size: 1rem;
+  }
+
   .note {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     margin-top: 3rem;
+    @include screen-max-width('phone-up'){
+      width:4rem;
+      height:4rem;
+    }
 
   }
 
   p,
   h2 {
     @extend %font-family-commun;
+
+    @include screen-max-width('tablet-up') {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
   }
-}
+  span {
+    font-size:1.8rem;
+
+    @include screen-max-width('tablet-down') {
+
+      font-size: 2rem;
+
+    }
+
+    @include screen-max-width('tablet-up') {
+      font-size: 1.9rem;
+      padding-bottom:2rem;
+
+    }
+
+  }
+
 
 .note2 {
-  width: 70px;
-  height: 70px;
+  width: 4.3rem;
+  height: 4.3rem;
   margin: 2rem 0.7rem;
+
 }
 
 .menu__foot-note {
   @include flexcenter;
   margin-top: 3rem;
+
+  @include screen-max-width ('phone-up') {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+
+  }
+}
 }

@@ -7,7 +7,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Devonshire&display=swap");
-@import url(//db.onlinewebfonts.com/c/c455d94eee43dc4ceeb83c0c0fd0d4c8?family=Segoe+Print);
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Noto+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam&family=Kaushan+Script&display=swap");
@@ -356,15 +356,12 @@ template {
   font-size: 6rem;
 }
 
-.menu .menu__dishe span {
-  font-size: 1.5rem;
-}
-
 .menu--lne p,
 .menu--lne h2, .menu--palette p,
 .menu--palette h2, .menu--delice h2,
 .menu--delice p {
-  font-family: "Segoe Print", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
 }
 
 .menu--palette, .menu--delice, .menu--chic {
@@ -402,7 +399,7 @@ template {
 /* media queries responsive part */
 /*********************************/
 main {
-  max-width: 1300px;
+  max-width: 85rem;
   margin: 0 auto;
   margin-bottom: 13rem;
 }
@@ -415,9 +412,27 @@ main {
   font-size: 4rem;
   color: #fcca46;
 }
-@media screen and (min-width: 600px) {
+.header a {
+  color: #fcca46;
+}
+.header :link {
+  text-decoration: none;
+}
+@media screen and (max-width: 2560px) {
+  .header {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
   .header {
     font-size: 2rem;
+    line-height: 0.8rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    font-size: 2.5rem;
+    width: 100%;
   }
 }
 
@@ -426,9 +441,15 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0;
   flex-wrap: wrap;
-  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .restaurants {
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    font-size: 2rem;
+  }
 }
 
 .restaurant {
@@ -437,21 +458,43 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 46%;
+  width: 45%;
   height: 40rem;
   margin: 1rem;
-  font-family: "Segoe Print", cursive;
+  font-family: "Caveat", cursive;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1024px) {
   .restaurant {
-    width: 100%;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant {
+    font-size: 1.7rem;
+    width: 42%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .restaurant {
+    width: 96%;
+    margin-bottom: 1rem;
   }
 }
 .restaurant h1 {
   padding-bottom: 1rem;
 }
+@media screen and (max-width: 1024px) {
+  .restaurant h1 {
+    font-size: 1rem;
+  }
+}
 .restaurant h2 {
   font-size: 4rem;
+}
+@media screen and (max-width: 1200px) {
+  .restaurant h2 {
+    font-size: 3rem;
+  }
 }
 .restaurant a:link {
   text-decoration: none;
@@ -472,7 +515,12 @@ main {
   background-color: #fcdfdb;
 }
 .restaurant--lne img {
-  width: 100px;
+  width: 6rem;
+}
+@media screen and (max-width: 480px) {
+  .restaurant--lne img {
+    width: 4rem;
+  }
 }
 .restaurant--lne h1 {
   margin-top: 0;
@@ -480,9 +528,19 @@ main {
   color: #3c1218;
   font-family: "Devonshire", cursive;
 }
+@media screen and (max-width: 480px) {
+  .restaurant--lne h1 {
+    font-size: 2rem;
+  }
+}
 .restaurant--lne h2 {
   font-family: "Balsamiq Sans", cursive;
   color: #3c1218;
+}
+@media screen and (max-width: 1024px) {
+  .restaurant--lne h2 {
+    font-size: 2.8rem;
+  }
 }
 
 .restaurant--mc {
@@ -490,11 +548,28 @@ main {
   font-family: "Croissant One", cursive;
 }
 .restaurant--mc h1 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   background: #e38913;
   background: linear-gradient(168deg, #e38913, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: ) {
+  .restaurant--mc h1 {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .restaurant--mc h1 {
+    font-size: 1.9rem;
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .restaurant--mc h1 {
+    font-size: 1.8rem;
+    padding: 0.4rem;
+  }
 }
 .restaurant--mc h2 {
   font-family: "Noto Serif", serif;
@@ -513,6 +588,16 @@ main {
   -webkit-text-fill-color: transparent;
   padding-left: 1rem;
 }
+@media screen and (max-width: 1200px) {
+  .restaurant--md h1 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .restaurant--md h1 {
+    padding: 0 1.5rem;
+  }
+}
 .restaurant--md h2 {
   font-family: "Kalam", cursive;
   color: #0887fb;
@@ -529,6 +614,16 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 1200px) {
+  .restaurant--mp h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .restaurant--mp h1 {
+    font-size: 2rem;
+  }
+}
 .restaurant--mp h2 {
   font-family: "Kalam", cursive;
   color: #72bf56;
@@ -543,25 +638,21 @@ main {
   justify-content: space-between;
   font-size: 3rem;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1024px) {
   .footer {
-    font-size: 1rem;
-    line-height: 0.2;
-    margin-bottom: 0.2rem;
-    flex-direction: column-reverse;
-    align-items: center;
+    font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 768px) {
   .footer {
-    flex-direction: column-reverse;
-    align-items: center;
-    font-size: 1.5rem;
-    width: 100%;
-    overflow: hidden;
+    font-size: 1rem;
   }
-  .footer .footer__item {
-    height: 20%;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 0.8rem;
+    text-align: center;
+    flex-direction: column;
   }
 }
 .footer a {
@@ -588,6 +679,11 @@ main {
   background-color: #579c87;
   border-radius: 50px;
 }
+@media screen and (max-width: 480px) {
+  .soon__element {
+    font-size: 1.5rem;
+  }
+}
 .soon__element span {
   background-color: #579c87;
   width: 0.5rem;
@@ -610,6 +706,22 @@ main {
   background-color: #fff5fe;
   font-family: "Noto Serif", serif;
 }
+.menu--chic .menu__title {
+  padding-bottom: 6rem;
+}
+.menu--chic h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 1200px) {
+  .menu--chic h2 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--chic h2 {
+    font-size: 1.1rem;
+  }
+}
 .menu--chic .header,
 .menu--chic h1,
 .menu--chic h3 {
@@ -622,6 +734,11 @@ main {
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
 }
+@media screen and (max-width: 1024px) {
+  .menu--chic h1 {
+    font-size: 1rem;
+  }
+}
 .menu--chic h2,
 .menu--chic p,
 .menu--chic span {
@@ -631,12 +748,40 @@ main {
   padding-top: 2rem;
 }
 .menu--chic .menu__decoration .menu__decoration__tray {
-  height: 25px;
-  width: 300px;
+  height: 1.56rem;
+  width: 17rem;
   margin-top: 0.3rem;
 }
-.menu--chic .menu__dishe {
-  padding: 0 12rem;
+@media screen and (max-width: 2560px) {
+  .menu--chic .menu__dishe {
+    padding: 0 12rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu--chic .menu__dishe {
+    padding: 0 8rem;
+    font-size: 1.2rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu--chic .menu__dishe {
+    padding: 0;
+    margin: 0 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--chic .menu__dishe {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu--chic .menu__dishe {
+    line-height: 1.5rem;
+  }
 }
 .menu--chic .menu__dishe--1 {
   color: #c67412;
@@ -646,6 +791,19 @@ main {
 }
 .menu--chic .menu__dishe--3 {
   color: #6e4ccc;
+}
+.menu--chic span {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .menu--chic span {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--chic span {
+    font-size: 1rem;
+  }
 }
 
 .menu--delice {
@@ -663,10 +821,20 @@ main {
   padding-bottom: 4rem;
   padding-top: 12rem;
 }
+@media screen and (max-width: 768px) {
+  .menu--delice h1 {
+    padding-top: 6rem;
+  }
+}
 .menu--delice .menu__decoration__tray {
-  height: 40px;
-  width: 290px;
+  height: 2.5rem;
+  width: 15rem;
   margin: 0rem 1rem;
+}
+@media screen and (max-width: 768px) {
+  .menu--delice .menu__decoration {
+    padding: 4rem 0;
+  }
 }
 .menu--delice .menu__dishe {
   color: #000000;
@@ -676,14 +844,8 @@ main {
 .menu--palette {
   background-color: #fdfffd;
 }
-.menu--palette .header,
 .menu--palette h1 {
   font-family: "Kaushan Script", cursive;
-}
-.menu--palette h2 {
-  padding-top: 2rem;
-}
-.menu--palette h1 {
   background: #3d923a;
   background: linear-gradient(168deg, #3d923a, #beff7f);
   -webkit-background-clip: text;
@@ -691,23 +853,47 @@ main {
   padding-bottom: 3rem;
   padding-top: 12rem;
 }
+@media screen and (max-width: 768px) {
+  .menu--palette h1 {
+    padding-top: 6rem;
+  }
+}
+.menu--palette h2 {
+  padding-top: 2rem;
+}
 .menu--palette .menu__dishe {
   padding: 0 8rem;
 }
+@media screen and (max-width: 1024px) {
+  .menu--palette .menu__dishe {
+    line-height: 2.5rem;
+  }
+}
 .menu--palette .menu__decoration__tray {
-  height: 40px;
-  width: 315px;
+  height: 2.5rem;
+  width: 17rem;
   margin: 2rem 1rem;
 }
 .menu--palette h3 {
   font-size: 3.2rem;
 }
 
-.title-restaurant p {
+.title-restaurant {
   font-size: 3rem;
   display: flex;
   justify-content: center;
   font-family: "Balsamiq Sans", cursive;
+}
+@media screen and (max-width: 1024px) {
+  .title-restaurant {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title-restaurant {
+    text-align: center;
+    font-size: 1.75rem;
+  }
 }
 
 .menu--lne {
@@ -728,43 +914,93 @@ main {
   padding: 0 5rem;
 }
 .menu--lne .menu__decoration__tray {
-  height: 25px;
-  width: 270px;
-  padding: 0;
-  margin: 2.5rem 1rem;
+  height: 1.56rem;
+  width: 17rem;
+  margin: 2.5rem;
 }
 .menu--lne .menu__dishe {
   padding: 0 8rem;
 }
+.menu--lne span {
+  font-size: 1rem;
+}
 .menu--lne .note {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   margin-top: 3rem;
 }
-.note2 {
-  width: 70px;
-  height: 70px;
+@media screen and (max-width: 480px) {
+  .menu--lne .note {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--lne p,
+.menu--lne h2 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+.menu--lne span {
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 1024px) {
+  .menu--lne span {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--lne span {
+    font-size: 1.9rem;
+    padding-bottom: 2rem;
+  }
+}
+.menu--lne .note2 {
+  width: 4.3rem;
+  height: 4.3rem;
   margin: 2rem 0.7rem;
 }
-
-.menu__foot-note {
+.menu--lne .menu__foot-note {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+}
+@media screen and (max-width: 480px) {
+  .menu--lne .menu__foot-note {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 .menu {
   margin: 0 auto;
   margin-bottom: 15rem;
-  max-width: 1100px;
-  font-size: 1.3rem;
-  line-height: 2.8rem;
+  max-width: 68rem;
+  font-size: 1.27rem;
+  line-height: 3.8rem;
   box-shadow: 4px 4px 16px 6px #e6e7e9;
   /* soulignement au passage de la souris des titres des repas"*/
+}
+@media screen and (max-width: 1024px) {
+  .menu {
+    width: auto;
+    font-size: 1.1rem;
+  }
 }
 .menu h1 {
   font-size: 4rem;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .menu h1 {
+    font-size: 2.8rem;
+  }
 }
 .menu .menu__title {
   text-align: center;
@@ -775,12 +1011,50 @@ main {
   margin: 2rem 3rem;
   padding: 2rem 0rem;
 }
+@media screen and (max-width: 1024px) {
+  .menu .menu__decoration {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu .menu__decoration {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 2rem;
+  }
+}
 .menu .menu__decoration .menu__decoration__tray {
   padding-top: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .menu .menu__decoration .menu__decoration__tray {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu .menu__decoration .menu__decoration__tray {
+    padding: 0;
+    width: 50%;
+  }
 }
 .menu .menu__dishe {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .menu .menu__dishe {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu h2 {
+    padding: 0;
+    margin: 0;
+  }
 }
 .menu h3 {
   font-size: 3.2rem;
@@ -796,6 +1070,27 @@ main {
 .menu .menu__decoration h2:hover::after {
   width: 100%;
   transition: all 0.5s ease-in-out;
+}
+
+.mentions h1 {
+  font-size: 3rem;
+}
+.mentions h2 {
+  font-size: 2rem;
+  font-family: "Segoe Print V1";
+}
+.mentions h3 {
+  font-size: 1.75rem;
+}
+.mentions p {
+  font-size: 1.5rem;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  .mentions {
+    padding: 1rem;
+    text-align: justify;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

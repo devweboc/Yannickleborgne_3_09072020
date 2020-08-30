@@ -3,6 +3,20 @@
   font-family: $chic-font-family-texte;
   @extend %padding-bottom-10;
 
+  .menu__title {
+    padding-bottom: 6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    @include screen-max-width('other'){
+      font-size:1.6rem;
+    }
+    @include screen-max-width('tablet-up'){
+      font-size:1.1rem;
+    }
+  }
+
   .header,
   h1,
   h3 {
@@ -10,33 +24,67 @@
   }
 
   h1 {
+
     @include gradientcolor ($colorA: $chic-text-color-1, $colorB: $chic-text-color-3);
     @extend %font-padding;
     font-size: 3rem;
+
+    @include screen-max-width ('tablet-down') {
+      font-size: 1rem;
+
+    }
   }
 
   h2,
   p,
   span {
     font-family: $chic-font-family-texte;
+
+    
   }
 
   .menu__decoration {
     padding-top: 2rem;
 
+   
     .menu__decoration__tray {
-      height: 25px;
-      width: 300px;
+      height: 1.56rem;
+      width: 17rem;
       margin-top: 0.3rem;
     }
   }
 
   .menu__dishe {
+    @include screen-max-width('widescreen-up'){
     padding: 0 12rem;
+    }
+    @include screen-max-width('tablet-down') {
+      padding:0 8rem;
+      font-size: 1.2rem;
+      line-height:4rem;
+    }
+    
+    @include screen-max-width ('tablet-down') {
+      padding:0; 
+      margin:0 3rem;
+      
+      }
+      @include screen-max-width ('tablet-up') {
+        flex-direction:column;
+        text-align:center;
+        font-size:1rem;
+        line-height: 2.5rem;
+    }
+    @include screen-max-width ('phone-up'){
+      line-height: 1.5rem;
+    }
+    
   }
+  
 
   .menu__dishe--1 {
     color: $chic-text-color-2;
+   
   }
 
   .menu__dishe--2 {
@@ -45,5 +93,20 @@
 
   .menu__dishe--3 {
     color: $chic-text-color-3;
+  }
+  span {
+    font-size:1.5rem;
+
+    @include screen-max-width('tablet-down') {
+
+      font-size: 1.4rem;
+
+    }
+
+    @include screen-max-width('tablet-up') {
+      font-size: 1rem;
+
+    }
+
   }
 }

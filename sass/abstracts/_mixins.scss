@@ -2,10 +2,12 @@
     display: flex;
     justify-content: center;
 }
-@mixin column-reverse-align{
+
+@mixin column-reverse-align {
     flex-direction: column-reverse;
     align-items: center;
 }
+
 @mixin gradientcolor ($colorA: $chic-text-color-1, $colorB:$chic-text-color-3) {
     background: $colorA;
     background: linear-gradient(168deg, $colorA, $colorB);
@@ -50,8 +52,15 @@
 
 
 
-@mixin screen-max-width ($format: 'tablet-up') {
-    @media screen and (min-width: map-get($breakpoints,$format)) {
+@mixin screen-max-width ($format: '') {
+    @media screen and (max-width: map-get($breakpoints, $format)) {
+        @content;
+
+    }
+}
+
+@mixin screen-min-width ($format: '') {
+    @media screen and (min-width: map-get($breakpoints, $format)) {
         @content;
 
     }
