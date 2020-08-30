@@ -752,10 +752,8 @@ main {
   width: 17rem;
   margin-top: 0.3rem;
 }
-@media screen and (max-width: 2560px) {
-  .menu--chic .menu__dishe {
-    padding: 0 12rem;
-  }
+.menu--chic .menu__dishe {
+  padding: 0 12rem;
 }
 @media screen and (max-width: 1024px) {
   .menu--chic .menu__dishe {

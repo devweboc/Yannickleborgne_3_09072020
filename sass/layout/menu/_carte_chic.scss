@@ -57,9 +57,9 @@
   }
 
   .menu__dishe {
-    @include screen-max-width('widescreen-up') {
+    
       padding: 0 12rem;
-    }
+    
 
     @include screen-max-width('tablet-down') {
       padding: 0 8rem;
