@@ -61,6 +61,10 @@
     width: 7.5rem;
     height: 7.5rem;
     margin-top: 3rem;
+    @include screen-max-width('phone-up'){
+      width:4rem;
+      height:4rem;
+    }
 
   }
 
@@ -76,7 +80,23 @@
       padding: 0;
     }
   }
-}
+  span {
+    font-size:1.8rem;
+
+    @include screen-max-width('tablet-down') {
+
+      font-size: 2rem;
+
+    }
+
+    @include screen-max-width('tablet-up') {
+      font-size: 1.9rem;
+      padding-bottom:2rem;
+
+    }
+
+  }
+
 
 .note2 {
   width: 4.3rem;
@@ -96,4 +116,5 @@
     margin: 0;
 
   }
+}
 }

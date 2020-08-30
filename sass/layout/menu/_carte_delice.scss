@@ -13,6 +13,9 @@
     @extend %font-size-h1;
     padding-bottom: 4rem;
     padding-top: 12rem;
+    @include screen-max-width('tablet-up'){
+      padding-top:6rem;
+    }
   }
 
   .menu__decoration__tray {

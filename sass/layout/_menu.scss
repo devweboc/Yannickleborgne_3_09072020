@@ -9,13 +9,13 @@
   margin-bottom: $margin-bottom-15;
   max-width: 68rem;
   font-size: 1.27rem;
-  line-height: 2.8rem;
+  line-height: 3.8rem;
   @include shadow-card;
 
   @include screen-max-width('tablet-down') {
     width: auto;
     font-size: 1.1rem;
-    text-align: center;
+    
   }
 
 
@@ -30,19 +30,7 @@
 
   }
 
-  h2 {
-    
-
-    @include screen-max-width('tablet-up') {
-      font-size: 1.5rem;
-    }
-
-   
-    @include screen-max-width('other'){ 
-    font-size:2rem;
-    }
-    
-  }
+  
 
   .menu__title {
     text-align: center;
@@ -55,6 +43,7 @@
     margin: 2rem 3rem;
     padding: 2rem 0rem;
 
+
     @include screen-max-width('tablet-down') {
       font-size: 1rem;
 
@@ -65,10 +54,10 @@
       flex-direction: column;
       text-align: center;
       align-items: center;
-      margin: 0;
-      padding: 0;
-    }
+      margin:2rem;
     
+    }
+
     .menu__decoration__tray {
       padding-top: 2rem;
 
@@ -79,6 +68,8 @@
 
       @include screen-max-width('tablet-up') {
         padding: 0;
+        width:50%;
+        
       }
 
     }
@@ -87,10 +78,7 @@
   .menu__dishe {
     @include flex-between;
 
-    @include screen-max-width('tablet-down') {
-      padding: 3rem;
-      font-size: 1.6rem;
-    }
+ 
 
     @include screen-max-width('phone-down') {
       flex-direction: column;
@@ -100,21 +88,7 @@
 
     }
 
-    span {
-      @extend %size-price;
-
-      @include screen-max-width('tablet-down') {
-
-        font-size: 1.6rem;
-
-      }
-
-      @include screen-max-width('tablet-up') {
-        font-size: 1.6rem;
-
-      }
-
-    }
+    
   }
 
   h2 {

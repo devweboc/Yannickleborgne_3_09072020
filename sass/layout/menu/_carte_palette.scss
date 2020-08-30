@@ -3,10 +3,18 @@
 
   @extend %padding-bottom-10;
 
-  .header,
   h1 {
     font-family: $palette-font-family-title;
+    @include gradientcolor ($colorA: $palette-text-color-1, $colorB: $palette-text-color-2);
+    @extend %font-padding;
+    @extend %font-size-h1;
+    padding-bottom: 3rem;
+    padding-top: 12rem;
+    @include screen-max-width('tablet-up'){
+      padding-top:6rem;
+    }
   }
+
 
   p,
   h2 {
@@ -17,16 +25,12 @@
     padding-top: 2rem;
   }
 
-  h1 {
-    @include gradientcolor ($colorA: $palette-text-color-1, $colorB: $palette-text-color-2);
-    @extend %font-padding;
-    @extend %font-size-h1;
-    padding-bottom: 3rem;
-    padding-top: 12rem;
-  }
 
   .menu__dishe {
     padding: 0 8rem;
+    @include screen-max-width('tablet-down'){
+      line-height: 2.5rem;
+    }
   }
 
   .menu__decoration__tray {

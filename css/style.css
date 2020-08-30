@@ -356,10 +356,6 @@ template {
   font-size: 6rem;
 }
 
-.menu .menu__dishe span {
-  font-size: 2rem;
-}
-
 .menu--lne p,
 .menu--lne h2, .menu--palette p,
 .menu--palette h2, .menu--delice h2,
@@ -422,7 +418,7 @@ main {
 .header :link {
   text-decoration: none;
 }
-@media screen and (max-width: 1601px) {
+@media screen and (max-width: 2560px) {
   .header {
     font-size: 4rem;
   }
@@ -716,6 +712,16 @@ main {
 .menu--chic h2 {
   font-size: 2rem;
 }
+@media screen and (max-width: 1200px) {
+  .menu--chic h2 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--chic h2 {
+    font-size: 1.1rem;
+  }
+}
 .menu--chic .header,
 .menu--chic h1,
 .menu--chic h3 {
@@ -746,13 +752,22 @@ main {
   width: 17rem;
   margin-top: 0.3rem;
 }
-.menu--chic .menu__dishe {
-  padding: 0 6rem;
+@media screen and (max-width: 2560px) {
+  .menu--chic .menu__dishe {
+    padding: 0 12rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu--chic .menu__dishe {
+    padding: 0 8rem;
+    font-size: 1.2rem;
+    line-height: 4rem;
+  }
 }
 @media screen and (max-width: 1024px) {
   .menu--chic .menu__dishe {
     padding: 0;
-    margin: 0;
+    margin: 0 3rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -760,6 +775,12 @@ main {
     flex-direction: column;
     text-align: center;
     font-size: 1rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu--chic .menu__dishe {
+    line-height: 1.5rem;
   }
 }
 .menu--chic .menu__dishe--1 {
@@ -770,6 +791,19 @@ main {
 }
 .menu--chic .menu__dishe--3 {
   color: #6e4ccc;
+}
+.menu--chic span {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .menu--chic span {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--chic span {
+    font-size: 1rem;
+  }
 }
 
 .menu--delice {
@@ -786,6 +820,11 @@ main {
   -webkit-text-fill-color: transparent;
   padding-bottom: 4rem;
   padding-top: 12rem;
+}
+@media screen and (max-width: 768px) {
+  .menu--delice h1 {
+    padding-top: 6rem;
+  }
 }
 .menu--delice .menu__decoration__tray {
   height: 2.5rem;
@@ -805,14 +844,8 @@ main {
 .menu--palette {
   background-color: #fdfffd;
 }
-.menu--palette .header,
 .menu--palette h1 {
   font-family: "Kaushan Script", cursive;
-}
-.menu--palette h2 {
-  padding-top: 2rem;
-}
-.menu--palette h1 {
   background: #3d923a;
   background: linear-gradient(168deg, #3d923a, #beff7f);
   -webkit-background-clip: text;
@@ -820,8 +853,21 @@ main {
   padding-bottom: 3rem;
   padding-top: 12rem;
 }
+@media screen and (max-width: 768px) {
+  .menu--palette h1 {
+    padding-top: 6rem;
+  }
+}
+.menu--palette h2 {
+  padding-top: 2rem;
+}
 .menu--palette .menu__dishe {
   padding: 0 8rem;
+}
+@media screen and (max-width: 1024px) {
+  .menu--palette .menu__dishe {
+    line-height: 2.5rem;
+  }
 }
 .menu--palette .menu__decoration__tray {
   height: 2.5rem;
@@ -883,6 +929,12 @@ main {
   height: 7.5rem;
   margin-top: 3rem;
 }
+@media screen and (max-width: 480px) {
+  .menu--lne .note {
+    width: 4rem;
+    height: 4rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .menu--lne p,
 .menu--lne h2 {
@@ -893,20 +945,32 @@ main {
     padding: 0;
   }
 }
-
-.note2 {
+.menu--lne span {
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 1024px) {
+  .menu--lne span {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--lne span {
+    font-size: 1.9rem;
+    padding-bottom: 2rem;
+  }
+}
+.menu--lne .note2 {
   width: 4.3rem;
   height: 4.3rem;
   margin: 2rem 0.7rem;
 }
-
-.menu__foot-note {
+.menu--lne .menu__foot-note {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
 }
 @media screen and (max-width: 480px) {
-  .menu__foot-note {
+  .menu--lne .menu__foot-note {
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -919,7 +983,7 @@ main {
   margin-bottom: 15rem;
   max-width: 68rem;
   font-size: 1.27rem;
-  line-height: 2.8rem;
+  line-height: 3.8rem;
   box-shadow: 4px 4px 16px 6px #e6e7e9;
   /* soulignement au passage de la souris des titres des repas"*/
 }
@@ -927,7 +991,6 @@ main {
   .menu {
     width: auto;
     font-size: 1.1rem;
-    text-align: center;
   }
 }
 .menu h1 {
@@ -937,16 +1000,6 @@ main {
 @media screen and (max-width: 768px) {
   .menu h1 {
     font-size: 2.8rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu h2 {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .menu h2 {
-    font-size: 2rem;
   }
 }
 .menu .menu__title {
@@ -968,8 +1021,7 @@ main {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    margin: 2rem;
   }
 }
 .menu .menu__decoration .menu__decoration__tray {
@@ -983,17 +1035,12 @@ main {
 @media screen and (max-width: 768px) {
   .menu .menu__decoration .menu__decoration__tray {
     padding: 0;
+    width: 50%;
   }
 }
 .menu .menu__dishe {
   display: flex;
   justify-content: space-between;
-}
-@media screen and (max-width: 1024px) {
-  .menu .menu__dishe {
-    padding: 3rem;
-    font-size: 1.6rem;
-  }
 }
 @media screen and (max-width: 600px) {
   .menu .menu__dishe {
@@ -1001,16 +1048,6 @@ main {
     margin: 0;
     padding: 1rem;
     text-align: center;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .menu .menu__dishe span {
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu .menu__dishe span {
-    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 768px) {
