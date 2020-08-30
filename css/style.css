@@ -554,11 +554,11 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: ) {
+
   .restaurant--mc h1 {
     padding: 0 2rem;
   }
-}
+
 @media screen and (max-width: 1200px) {
   .restaurant--mc h1 {
     font-size: 1.9rem;
